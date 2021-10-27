@@ -1,0 +1,5 @@
+1. create a nav bar to navigate between the list-page and time-page divs as in the screenshot
+2. make it responsive
+3. presiing on the sort button will sort the list in ascending order, pressing again will sort it in descending order ... and so on .....
+
+

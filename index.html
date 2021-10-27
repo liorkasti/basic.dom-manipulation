@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidenav">
+      <a onclick="navBarHandler(event)" href="#list-page">List</a>
+      <a onclick="navBarHandler(event)" href="#time-page">Time</a>
+      <a onclick="navBarHandler(event)" href="#food-page">Food</a>
+      <a onclick="navBarHandler(event)" href="#music-page">Music</a>
+      <a onclick="navBarHandler(event)" href="#israel-page">Israel</a>
+    </div>
+
+    <div id="class" class="main">
+      <div id="list">
+        <div id="list-page" class="active">
+          <div class="heading">The List Page</div>
+          <ol id="names-list">
+            <li>Benny</li>
+            <li>Avi</li>
+            <li>Carine</li>
+            <li>Elinor</li>
+            <li>Rinat</li>
+            <li>Ori</li>
+          </ol>
+          <div id="sort-btn" data="#time-page" onclick="sortList()">Sort</div>
+        </div>
+
+        <div id="time-page" class="hidden">
+          <div class="heading">The Time Page</div>
+          <div>I have no time</div>
+        </div>
+
+        <div id="food-page" class="hidden">
+          <div class="heading">The Food Page</div>
+          <div>Banana Yellow Bomb</div>
+        </div>
+
+        <div id="music-page" class="hidden">
+          <div class="heading">The Music Page</div>
+          <div>Shlomo Artzi is great</div>
+        </div>
+
+        <div id="israel-page" class="hidden">
+          <div class="heading">The Israel Page</div>
+          <div>Tel-Aviv Is Great</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggelBar() {
+        console.log(document.getElementById('names-list'));
+        var element = document.getElementById('names-list');
+        element.classList.toggle("list");
+      }
+    </script>
+
+</body>
+
+</html>
